@@ -1,0 +1,460 @@
+.normal {
+    font-family: "Fira Sans"
+}
+body {
+    margin: 0px;
+    background-color: #f3f3f3;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 90px;
+}
+.nav-title {
+    font-weight: bold;
+    font-size: 32px;
+}
+.sign-in {
+    padding: 10px;
+    border: 1px solid #008374;
+    border-radius: 4px;
+    color: #008374;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.sign-in:hover {
+    background: #008374;
+    color: white;
+}
+
+.banner {
+    background-color: #d3ebe9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 50px;
+    margin: 0px 90px;
+    border-radius: 20px;
+}
+.banner img{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.banner-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.banner h4 {
+    font-weight: 500;
+    font-size: 24;
+    color: #6e6e6e;
+}
+.banner h1 {
+    font-weight: bold;
+    font-size: 56px;
+    color: #000000;
+}
+.explore-btn {
+    font-weight: 600;
+    font-size: 18px;
+    display: inline-block;
+    padding: 10px 30px;
+    background: #008374;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.explore-btn:hover {
+    background: #006d61;
+}
+
+.pillars {
+    padding: 50px 90px;
+}
+.pillars h2 {
+    font-weight: bold;
+    font-size: 40px;
+}
+.pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; 
+}
+.pillar-card {
+    background: #ffffff;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.pillar-card h3 {
+    font-weight: bold;
+    font-size: 20px;
+}
+.pillar-card p {
+    font-weight: 400;
+    font-size: 16px;
+}
+.pillar-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+
+.vision {
+    padding: 50px 90px;
+}
+.vision h2 {
+    font-weight: bold;
+    font-size: 40px;
+}
+.vision p {
+    font-weight: 400;
+    font-size: 16px;
+}
+.vision-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.vision-card {
+    padding: 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.vision-card h3 {
+    font-weight: bold;
+    font-size: 20px;
+}
+.vision-card p {
+    font-weight: 400;
+    font-size: 16px;
+}
+.vision-card:nth-child(1) { 
+    background: #e8f0ff;
+}
+.vision-card:nth-child(2) { 
+    background: #e8f8f0; 
+}
+.vision-card:nth-child(3) { 
+    background: #fff0e8; 
+}
+
+.vision-card:hover {
+    transform: translateY(-5px);
+}
+
+.quote {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 90px;
+    padding: 10px 20px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    background: #ffffff;
+    background-image: url('../assets/quote-bg.png');
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-position-x: 0.5cm;
+}
+.quote-desc p {
+    font-weight: 400;
+    font-size: 16px;
+}
+.quote-author h3 {
+    font-weight: 600;
+    font-size: 20px;
+}
+.quote-author p {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.opinions {
+    padding: 50px 90px;
+}
+
+.opinions h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 40px;
+}
+.opinion {
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background: #ffffff;
+    
+}
+.opinion-grid {
+    border: 1px solid #8f8f8f;
+    width: 100%;
+}
+
+.opinion-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 20px;
+    background: #dcf3f1;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.opinion-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 20px;
+    border-bottom: 1px solid #8f8f8f;
+    align-items: center;
+    position: relative;
+    margin: 0px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+.opinion-row::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 180px;
+    width: 1px;
+    background: #8f8f8f;
+}
+.select-wrapper {
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.select-wrapper select {
+    appearance: none;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background: #dcf3f1;
+    color: #333;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.select-wrapper::after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #333;
+    pointer-events: none;
+}
+
+.news {
+    padding: 50px 90px;
+}
+.news h2{
+    font-weight: bold;
+    font-size: 40px;
+}
+.news p {
+    font-weight: 400;
+    font-size: 16px;
+}
+.news-card {
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 2rem;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.news-card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.news-image {
+    flex: 1;
+    max-width: fit-content;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.news-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news-content {
+    flex: 1;
+}
+.news-content h3 {
+    font-weight: bold;
+    font-size: 32px;
+}
+.news-content p {
+    font-weight: 400;
+    font-size: 16px;
+}
+.news-meta {
+    align-items: center;
+}
+
+.news-meta ul {
+    display: flex;
+    margin: 0.2px;
+    padding: 0px;
+}
+.news-meta ul li {
+    list-style: none;
+    margin-right: 20px;
+    font-weight: 400;
+    font-size: 16px;
+}
+.news-source {
+    height: 40px;
+}
+
+
+.donate {
+    padding: 50px 180px;
+    text-align: center;
+}
+.donate h2 {
+    font-weight: bold;
+    font-size: 40px;
+}
+.donate p {
+    font-weight: 400;
+    font-size: 16px;
+}
+.amount-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 20px;
+}
+
+.amount-card {
+    background: #ffffff;
+    text-align: center;
+    padding: 50px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 40px;
+    transition: all 0.3s ease;
+}
+
+.amount-card:hover {
+    background: #008374;
+    color: white;
+}
+
+.donate input {
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    margin: 50px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.newsletter {
+    margin: 50px 90px;
+    padding: 90px;
+    background: #d3ebe9;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+}
+.newsletter h2 {
+    font-weight: bold;
+    font-size: 40px;
+}
+.newsletter p {
+    font-weight: 400;
+    font-size: 16px;
+    max-width: 600px;
+}
+.newsletter-form {
+    display: flex;
+    max-width: 800px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 20px;
+    border: none;
+}
+.news-btn {
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    padding: 10px 30px;
+    background: #008374;
+    color: white;
+    border: none;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.news-btn:hover {
+    background: #006d61;
+}
+.news-btn span {
+    padding-top: 6px;
+}
+
+.footer {
+    padding: 2rem 5%;
+    text-align: center;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.footer h1 {
+    position: relative;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.3s ease;
+}
+
+.social-links img:hover {
+    opacity: 0.7;
+}
